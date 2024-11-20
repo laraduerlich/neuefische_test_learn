@@ -17,12 +17,14 @@ public class Array {
         System.out.println(numbers[3]);
         System.out.println(numbers[4]);
 
-
+        // For-Loop
+        // Zugriff auf den Wert über den Index über die Variable i
         for(int i = 0; i < numbers2.length; i++) {
             System.out.println(numbers2[i]);
         }
 
-        // for each Schleife, kann nicht beeinflusst werden
+        // For-Each-Loop
+        // Zugriff auf den Wert über die Variable number
         for(int number : numbers) {
             System.out.println(number);
         }

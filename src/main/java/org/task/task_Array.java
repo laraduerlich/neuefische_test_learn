@@ -1,6 +1,6 @@
-package org.aufgaben;
+package org.task;
 
-public class Aufgabe_Array {
+public class task_Array {
     public static void main(String[] args) {
         int[] numbers = new int[10];
         for (int i = 0; i < numbers.length; i++) {
@@ -11,6 +11,7 @@ public class Aufgabe_Array {
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
         }
+
         // Aufagbe 2
         int sum = 0;
         for(int i = 0; i < numbers.length; i++) {
@@ -24,14 +25,14 @@ public class Aufgabe_Array {
            if (numbers[i] > bigNumber) {
                bigNumber = numbers[i];
            }
-       }
+        }
         System.out.println("Größte Zahl: " + bigNumber);
 
         // Aufgabe 4
         int[] numbers2 = new int[10];
         for (int i = 0; i < 10; i++) {
             numbers2[i] = i + 11;
-    }
+        }
         System.out.println("Array 2: ");
         for (int num : numbers2) {
             System.out.print(num + " ");
@@ -49,7 +50,6 @@ public class Aufgabe_Array {
             System.out.print(num + " ");
         }
     }
-
-    }
+}
 
 

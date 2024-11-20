@@ -1,6 +1,6 @@
-package org.aufgaben;
+package org.task;
 
-public class Aufgabe_IfElse {
+public class task_IfElse {
     public static void main(String[] args) {
         double result = add(3.5, 5.6);
         System.out.println(result);
