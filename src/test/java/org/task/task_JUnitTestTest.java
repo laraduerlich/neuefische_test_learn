@@ -31,7 +31,7 @@ class task_JUnitTestTest {
     }
 
     @Test
-    void product_expect10_when2mult5() {
+     void product_expect10_when2mult5() {
         // GIVEN
         int a = 2;
         int b = 5;
