@@ -4,12 +4,12 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-public class PlayerCharacterTest {
+public class task_PlayerCharacterTest {
 
     @BeforeEach
     void setUp() {
-        PlayerCharacter.X = 0;
-        PlayerCharacter.Y = 0;
+        task_PlayerCharacter.X = 0;
+        task_PlayerCharacter.Y = 0;
     }
 
     @Test
@@ -17,7 +17,7 @@ public class PlayerCharacterTest {
         // GIVEN
         int start = 0;
         // WHEN
-        int actualStart = PlayerCharacter.getX();
+        int actualStart = task_PlayerCharacter.getX();
         // THEN
         Assertions.assertEquals(start, actualStart);
     }
@@ -26,7 +26,7 @@ public class PlayerCharacterTest {
         // GIVEN
         int start = 0;
         // WHEN
-        int actualStart = PlayerCharacter.getY();
+        int actualStart = task_PlayerCharacter.getY();
         // THEN
         Assertions.assertEquals(start, actualStart);
     }
@@ -36,7 +36,7 @@ public class PlayerCharacterTest {
         char up = 'W';
         int expectedY = 1;
         // WHEN
-        int moveUP = PlayerCharacter.move(up);
+        int moveUP = task_PlayerCharacter.move(up);
         // THEN
         Assertions.assertEquals(expectedY, moveUP);
     }
@@ -46,7 +46,7 @@ public class PlayerCharacterTest {
         char down = 'S';
         int expectedY = -1;
         // WHEN
-        int moveDOWN = PlayerCharacter.move(down);
+        int moveDOWN = task_PlayerCharacter.move(down);
         // THEN
         Assertions.assertEquals(expectedY, moveDOWN);
     }
@@ -56,7 +56,7 @@ public class PlayerCharacterTest {
         char right = 'D';
         int expectedX = 1;
         // WHEN
-        int moveRIGHT = PlayerCharacter.move(right);
+        int moveRIGHT = task_PlayerCharacter.move(right);
         // THEN
         Assertions.assertEquals(expectedX, moveRIGHT);
     }
@@ -66,7 +66,7 @@ public class PlayerCharacterTest {
         char left = 'A';
         int expectedX = -1;
         // WHEN
-        int moveLEFT = PlayerCharacter.move(left);
+        int moveLEFT = task_PlayerCharacter.move(left);
         // THEN
         Assertions.assertEquals(expectedX, moveLEFT);
     }

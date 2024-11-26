@@ -1,6 +1,6 @@
 package org.task;
 
-public class PlayerCharacter {
+public class task_PlayerCharacter {
 
     public static int getX() {
         return 0;
