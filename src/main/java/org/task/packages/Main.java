@@ -17,5 +17,9 @@ public class Main {
         // Library ausprinten
         System.out.println(library.toString());
 
+        // Bücher einzelne ausgeben
+        System.out.println(books[0].toString());
+        System.out.println(books[1].toString());
+
     }
 }
