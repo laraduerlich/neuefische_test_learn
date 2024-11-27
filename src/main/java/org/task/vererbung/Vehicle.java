@@ -58,7 +58,7 @@ public class Vehicle {
                 '}';
     }
 
-    public void GetVehicleInfo(){
+    public void getVehicleInfo(){
         System.out.println("Manufacturer: " + manufacturer);
         System.out.println("Model: " + model);
         System.out.println("Year: " + year);

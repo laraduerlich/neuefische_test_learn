@@ -37,7 +37,7 @@ public class Car extends Vehicle {
                 "manufacturer='" + getManufacturer() + '\'' +
                 ", model='" + getModel() + '\'' +
                 ", year=" + getYear() + '\'' +
-                "numberOfDoors=" + numberOfDoors +
+                ", numberOfDoors=" + numberOfDoors +
                 '}';
     }
 }
