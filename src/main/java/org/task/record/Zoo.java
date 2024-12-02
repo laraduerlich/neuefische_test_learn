@@ -4,9 +4,6 @@ import java.util.List;
 
 public record Zoo(List<Animal> animals) {
 
-    public Zoo {
-        animals = List.copyOf(animals);
-    }
     public void printAllAnimals() {
         for (Animal animal : animals) {
             System.out.println(animal);
