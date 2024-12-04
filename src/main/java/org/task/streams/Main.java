@@ -1,5 +1,7 @@
 package org.task.streams;
 
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -27,8 +29,7 @@ public class Main {
 
         // Step 4: Summe aller Zahlen zusammen
         int sum = numbers.stream()
-                .reduce(0, (Integer::sum)) // (number,b) -> number +b)
-                .intValue();
+                .reduce(0, (Integer::sum)); // (number,b) -> number +b)
         System.out.println("Summe aller Zahlen: " + sum);
 
         // Step 5: alle verarbeiteten Nummern werden ausgegeben:
@@ -43,7 +44,7 @@ public class Main {
                 .filter(number -> number % 2 == 0)
                 .map(number -> number * 2)
                 .sorted()
-                .collect(Collectors.toList());
+                .toList();
         System.out.println("Alle verarbeiteten Zahlen: " + collect);
     }
 }
